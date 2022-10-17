@@ -71,15 +71,15 @@ class Star {
 
     // ? create a circle infront of line stroke
     // ctx.arc(this.sx, this.sy, this.radius, 0, Math.PI * 2, false);
-    // ctx.fillStyle = "white";
     // ctx.fill();
-
+    
     ctx.moveTo(this.px, this.py);
     ctx.lineTo(this.sx, this.sy);
     ctx.strokeStyle = "white";
     ctx.stroke();
-
+    
     ctx.font = "30px Arial";
+    ctx.fillStyle = "white";
     ctx.fillText(`speed: ${speed ? speed : 1}`, -canvas.width / 2 + 20, -canvas.height / 2 + 40);
 
     ctx.restore();
